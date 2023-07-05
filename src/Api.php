@@ -7,6 +7,7 @@ use Symfony\Contracts\HttpClient\HttpClientInterface;
 use Symfony\Component\DomCrawler\Crawler;
 
 
+
 class Api
 {
     private HttpClientInterface $client;
@@ -15,6 +16,10 @@ class Api
     {
         $this->client = $client;
     }
+
+    /**
+ * @return Character[]
+ */
 
     public function getAllCharacters(): array
     {
@@ -50,11 +55,12 @@ class Api
 
         return $characters;
     }
-    /**
- * @return Character[]
+
+
+
+/**
+ * @return Infos[]
  */
-
-
 
 
     public function getInfosOfCharacter(string $name, string $link): array 
@@ -86,10 +92,6 @@ class Api
 
     }
 }
-
-/**
- * @return Infos[]
- */
 
 
 

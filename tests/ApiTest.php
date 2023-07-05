@@ -3,8 +3,6 @@
 use PHPUnit\Framework\TestCase;
 use Thomasaubert\OssMarvelLibrary\Api;
 
-
-
 class ApiTest extends TestCase
 {
     public function testGetAllCharacters()
