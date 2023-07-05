@@ -23,8 +23,8 @@
         "test": "@php vendor/bin/phpunit tests"
     },
     "require": {
-        "symfony/http-client": "^6.3",
-        "symfony/dom-crawler": "^6.3",
-        "symfony/css-selector": "^6.3"
+        "symfony/http-client": "^6.0",
+        "symfony/dom-crawler": "^6.0",
+        "symfony/css-selector": "^6.0"
     }
 }
