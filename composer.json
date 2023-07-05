@@ -1,0 +1,30 @@
+{
+    "name": "thomasaubert/oss-marvel-library",
+    "description": "A library with all marvels characters",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Thomasaubert\\OssMarvelLibrary\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Thomas Aubert",
+            "email": "thomas.aubert@edu.devinci.fr"
+        }
+    ],
+    "require-dev": {
+        "phpstan/phpstan": "^1.10",
+        "phpunit/phpunit": "^10.2"
+    },
+    "scripts": {
+        "phpstan": "@php vendor/bin/phpstan analyse src --level=max",
+        "test": "@php vendor/bin/phpunit tests"
+    },
+    "require": {
+        "symfony/http-client": "^6.3",
+        "symfony/dom-crawler": "^6.3",
+        "symfony/css-selector": "^6.3"
+    }
+}
