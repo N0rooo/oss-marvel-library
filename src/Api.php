@@ -50,8 +50,15 @@ class Api
 
         return $characters;
     }
+    /**
+ * @return Character[]
+ */
 
-    public function getInfosOfCharacter(string $name, string $link): array {
+
+
+
+    public function getInfosOfCharacter(string $name, string $link): array 
+    {
         $response = $this->client->request(
             'GET',
             $link
@@ -80,6 +87,9 @@ class Api
     }
 }
 
+/**
+ * @return Infos[]
+ */
 
 
 
@@ -111,6 +121,7 @@ class Character
     }
 
 }
+
 
 class Infos
 {
